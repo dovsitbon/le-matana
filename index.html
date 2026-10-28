@@ -1,0 +1,558 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+  <!-- ===================== SEO local ===================== -->
+  <title>Le Matana · Restaurant italien et pizzeria cachère à Montrouge (92)</title>
+  <meta name="description" content="Restaurant italien cacher à Montrouge (92) : pizzas au feu de bois faites devant vous, pâtes et gratins maison. Sur place, à emporter, livraison.">
+  <link rel="canonical" href="https://le-matana.vercel.app/">
+  <meta name="theme-color" content="#2B1D17">
+  <meta name="geo.region" content="FR-92">
+  <meta name="geo.placename" content="Montrouge">
+  <meta name="geo.position" content="48.8197134;2.3115971">
+  <meta name="ICBM" content="48.8197134, 2.3115971">
+
+  <!-- Partage réseaux sociaux -->
+  <meta property="og:type" content="restaurant">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:site_name" content="Le Matana">
+  <meta property="og:title" content="Le Matana · Restaurant italien et pizzeria cachère à Montrouge">
+  <meta property="og:description" content="Pizzas au feu de bois, pâtes et gratins faits maison, dans une petite trattoria cachère et chaleureuse à Montrouge.">
+  <meta property="og:url" content="https://le-matana.vercel.app/">
+  <meta property="og:image" content="https://le-matana.vercel.app/images/og-image.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+  <!-- Polices : Playfair Display (titres), Jost (texte), Caveat (ardoise) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&family=Jost:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap">
+
+  <link rel="preload" as="image" href="images/hero-four-a-bois-mobile.jpg" media="(max-aspect-ratio: 4/5)">
+  <link rel="preload" as="image" href="images/hero-four-a-bois.jpg" media="(min-aspect-ratio: 801/1000)">
+  <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.classList.add("js");</script>
+
+  <!-- ===================== Données structurées Schema.org =====================
+       Horaires À CONFIRMER : les garder alignés avec data/site.js -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "@id": "https://le-matana.vercel.app/#restaurant",
+    "name": "Le Matana",
+    "description": "Restaurant italien et pizzeria cachère à Montrouge : pizzas au feu de bois, pâtes, gratins et poissons faits maison.",
+    "url": "https://le-matana.vercel.app/",
+    "image": "https://le-matana.vercel.app/images/og-image.jpg",
+    "telephone": "+33146550407",
+    "priceRange": "€€",
+    "servesCuisine": ["Italian", "Pizza", "Kosher"],
+    "hasMenu": "https://le-matana.vercel.app/#carte",
+    "acceptsReservations": "True",
+    "paymentAccepted": "Espèces, Carte bancaire, Titres-restaurant",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "103 rue Gabriel Péri",
+      "postalCode": "92120",
+      "addressLocality": "Montrouge",
+      "addressRegion": "Hauts-de-Seine",
+      "addressCountry": "FR"
+    },
+    "geo": { "@type": "GeoCoordinates", "latitude": 48.8197134, "longitude": 2.3115971 },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Sunday"],
+        "opens": "18:30",
+        "closes": "23:00"
+      }
+    ],
+    "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.5", "reviewCount": "69", "bestRating": "5" }
+  }
+  </script>
+</head>
+
+<body>
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+
+  <!-- Icônes SVG réutilisables -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-mono" viewBox="0 0 100 100">
+      <rect x="17" y="19" width="3.2" height="62"/>
+      <polygon points="17,19 30,19 54,71 50.5,84"/>
+      <polygon points="48.6,84 51.8,84 78,19 75,19"/>
+      <rect x="72" y="19" width="12" height="62"/>
+      <rect x="9" y="17.6" width="21" height="1.8"/>
+      <rect x="69" y="17.6" width="23" height="1.8"/>
+      <rect x="10" y="80.6" width="17" height="1.8"/>
+      <rect x="65" y="80.6" width="27" height="1.8"/>
+    </symbol>
+    <!-- Logo complet, recréé d'après l'enseigne (M Didone + LE MATANA + RESTAURANT ITALIEN (K)).
+         Couleurs pilotées en CSS : --logo-m (le M), --logo-text, --logo-cut (détourage des lettres). -->
+    <symbol id="i-logo" viewBox="0 0 340 228">
+      <g style="fill:var(--logo-m,#E8DCC6)" transform="translate(86.6 -37.8) scale(2.6)">
+        <rect x="17" y="19" width="3.2" height="62"/>
+        <polygon points="17,19 30,19 54,71 50.5,84"/>
+        <polygon points="48.6,84 51.8,84 78,19 75,19"/>
+        <rect x="72" y="19" width="12" height="62"/>
+        <rect x="9" y="17.6" width="21" height="1.8"/>
+        <rect x="69" y="17.6" width="23" height="1.8"/>
+        <rect x="10" y="80.6" width="17" height="1.8"/>
+        <rect x="65" y="80.6" width="27" height="1.8"/>
+      </g>
+      <g font-family="Jost, Futura, Arial, sans-serif" font-weight="500" stroke-width="5" paint-order="stroke" stroke-linejoin="round"
+         style="fill:var(--logo-text,#F5EFE4);stroke:var(--logo-cut,#2B1D17)">
+        <text x="12" y="112" font-size="44" letter-spacing="1">LE</text>
+        <text x="100" y="126" font-size="46" letter-spacing="1">MATANA</text>
+      </g>
+      <g style="fill:var(--logo-text,#F5EFE4)" font-family="Jost, Futura, Arial, sans-serif">
+        <text x="200" y="210" text-anchor="middle" font-weight="400" font-size="14" letter-spacing="2.6">RESTAURANT ITALIEN</text>
+        <circle cx="318" cy="205" r="8" fill="none" stroke-width="1.4" style="stroke:var(--logo-text,#F5EFE4)"/>
+        <text x="318" y="209.5" text-anchor="middle" font-weight="500" font-size="11">K</text>
+      </g>
+    </symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" d="M5 3.5h3.2l1.6 4.2-2.1 1.4a11 11 0 0 0 7.2 7.2l1.4-2.1 4.2 1.6V19a1.8 1.8 0 0 1-1.9 1.8C10.4 20.3 3.7 13.6 3.2 5.4A1.8 1.8 0 0 1 5 3.5Z"/></symbol>
+    <symbol id="i-calendar" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="3.5" y="5" width="17" height="15.5" rx="1.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></g></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s-6.5-6-6.5-11a6.5 6.5 0 0 1 13 0c0 5-6.5 11-6.5 11Z"/><circle cx="12" cy="10" r="2.3"/></g></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></g></symbol>
+    <symbol id="i-metro" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><rect x="5" y="3.5" width="14" height="13" rx="3"/><path d="M5 11h14M8.5 20l1.5-3.5M15.5 20 14 16.5"/><circle cx="9" cy="13.8" r=".6" fill="currentColor"/><circle cx="15" cy="13.8" r=".6" fill="currentColor"/></g></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M4 12h15m-5-5 5 5-5 5"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><path d="m12 2.8 2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4-4.7-4.4 6.4-.8Z"/></symbol>
+    <symbol id="i-instagram" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3.5" y="3.5" width="17" height="17" rx="4.5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r=".8" fill="currentColor"/></g></symbol>
+    <symbol id="i-facebook" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" d="M14 21v-7.5h2.6l.4-3H14V8.7c0-.9.3-1.5 1.5-1.5H17V4.5a19 19 0 0 0-2.3-.1c-2.3 0-3.8 1.4-3.8 4v2.1H8.3v3h2.6V21"/></symbol>
+    <symbol id="i-flame" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" d="M12 21c-3.9 0-6.5-2.6-6.5-6.2 0-3.5 2.6-5.6 3.6-8.8 1.6 1.3 2.3 2.8 2.4 4.4C13 9 14 7.2 14 4.5c3 2.4 4.5 6 4.5 10.3 0 3.6-2.6 6.2-6.5 6.2Z"/></symbol>
+    <symbol id="i-hand" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 15h3.5l3.6 2.4c.9.6 2 .6 2.8-.1l5.6-4.6a1.5 1.5 0 0 0-1.9-2.3L14 12.5"/><path d="M4 11.5h4.5l3.3 1.4a1.3 1.3 0 0 1-.7 2.4H8.5"/><path d="M15 3.5a3 3 0 0 1 3 3H12a3 3 0 0 1 3-3Z"/></g></symbol>
+  </svg>
+
+  <!-- ===================== En-tête ===================== -->
+  <header class="header" id="header">
+    <button class="burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="drawer">
+      <span></span><span></span>
+    </button>
+
+    <a class="logo" translate="no" href="#accueil" aria-label="Le Matana, retour à l'accueil">
+      <svg class="logo__mono" aria-hidden="true"><use href="#i-mono"/></svg>
+      <span class="logo__text">
+        <span class="logo__name">Le Matana</span>
+        <span class="logo__sub">Restaurant italien</span>
+      </span>
+    </a>
+
+    <div class="header__actions">
+      <a class="icon-btn" href="tel:+33146550407" data-href="tel" aria-label="Appeler le restaurant">
+        <svg aria-hidden="true"><use href="#i-phone"/></svg>
+      </a>
+      <a class="btn btn--small btn--light header__book" href="#reservation">Réserver</a>
+    </div>
+  </header>
+
+  <!-- Menu plein écran -->
+  <nav class="drawer" id="drawer" aria-label="Menu principal" hidden>
+    <svg class="drawer__mono" aria-hidden="true"><use href="#i-mono"/></svg>
+    <ul class="drawer__links">
+      <li><a href="#accueil">Accueil</a></li>
+      <li><a href="#carte">La carte</a></li>
+      <li><a href="#restaurant">Le restaurant</a></li>
+      <li><a href="#reservation">Réservation &amp; événements</a></li>
+      <li><a href="#infos">Infos pratiques</a></li>
+    </ul>
+    <div class="drawer__foot">
+      <a href="tel:+33146550407" data-href="tel" data-bind="phone">01 46 55 04 07</a>
+      <span data-bind="address">103 rue Gabriel Péri, 92120 Montrouge</span>
+    </div>
+  </nav>
+
+  <main id="contenu">
+
+    <!-- ===================== Hero / carrousel ===================== -->
+    <section class="hero" id="accueil" aria-roledescription="carrousel" aria-label="Le Matana en images">
+      <div class="hero__slides">
+        <figure class="hero__slide is-active">
+          <picture>
+            <source media="(max-aspect-ratio: 4/5)" srcset="images/hero-four-a-bois-mobile.jpg">
+            <img src="images/hero-four-a-bois.jpg"
+               alt="Pizza tout juste sortie du four à bois, posée sur une planche" fetchpriority="high" width="2200" height="1469">
+          </picture>
+        </figure>
+        <figure class="hero__slide">
+          <picture>
+            <source media="(max-aspect-ratio: 4/5)" srcset="images/hero-pizza-margherita-mobile.jpg">
+            <img src="images/hero-pizza-margherita.jpg"
+               alt="Pizza margherita à la pâte dorée, mozzarella fondue et basilic frais" decoding="async" width="2200" height="1469">
+          </picture>
+        </figure>
+        <figure class="hero__slide">
+          <picture>
+            <source media="(max-aspect-ratio: 4/5)" srcset="images/hero-table-conviviale-mobile.jpg">
+            <img src="images/hero-table-conviviale.jpg"
+               alt="Table dressée en salle, assiettes servies et verres, lumière chaude du soir" decoding="async" width="2200" height="1469">
+          </picture>
+        </figure>
+      </div>
+      <div class="hero__veil" aria-hidden="true"></div>
+
+      <div class="hero__content">
+        <svg class="hero__logo" translate="no" role="img" aria-label="Le Matana, restaurant italien cachère"><use href="#i-logo"/></svg>
+        <h1 class="hero__kicker">Le Matana · Restaurant italien &amp; pizzeria cachère à Montrouge</h1>
+        <div class="hero__titles">
+          <p class="hero__title is-active">Le feu de bois,<br><em>sous vos yeux</em></p>
+          <p class="hero__title">L'Italie généreuse,<br><em>et cachère</em></p>
+          <p class="hero__title">Une table<br><em>où l'on revient</em></p>
+        </div>
+        <p class="hero__lead">Pizzas façonnées devant vous par notre pizzaiolo, pâtes et gratins faits maison, dans une petite salle chaleureuse.</p>
+        <div class="hero__cta">
+          <a class="btn btn--copper" href="#reservation">Réserver une table</a>
+          <a class="btn btn--ghost" href="#carte">Découvrir la carte</a>
+        </div>
+      </div>
+
+      <div class="hero__dots" role="tablist" aria-label="Choisir une image">
+        <button role="tab" aria-selected="true" aria-label="Image 1"></button>
+        <button role="tab" aria-selected="false" aria-label="Image 2"></button>
+        <button role="tab" aria-selected="false" aria-label="Image 3"></button>
+        <button class="hero__pause" type="button" aria-label="Mettre le diaporama en pause" aria-pressed="false"><span aria-hidden="true"></span></button>
+      </div>
+      <a class="hero__scroll" href="#presentation" aria-label="Faire défiler vers la présentation"><span></span></a>
+    </section>
+
+    <!-- Bandeau cachère -->
+    <div class="kosher">
+      <span class="kosher__badge" aria-hidden="true">K</span>
+      <p><strong>Restaurant cachère</strong><span class="kosher__sep" aria-hidden="true"></span>Sous la surveillance de <span data-bind="kosher">[Nom de la certification à confirmer]</span></p>
+    </div>
+
+    <!-- ===================== Présentation ===================== -->
+    <section class="section intro" id="presentation">
+      <div class="container container--narrow center reveal">
+        <p class="script">Fait maison</p>
+        <h2 class="title">Une trattoria cachère,<br>au cœur de Montrouge</h2>
+        <span class="rule" aria-hidden="true"></span>
+        <p class="lead">Au Matana, la pâte repose, le four à bois chauffe et le pizzaiolo travaille devant vous. Pizzas croustillantes, pâtes généreuses, gratins dorés&nbsp;: une cuisine italienne simple et copieuse, préparée sur place, servie avec le sourire.</p>
+      </div>
+
+      <ul class="pillars container">
+        <li class="reveal">
+          <svg aria-hidden="true"><use href="#i-flame"/></svg>
+          <h3>Four à bois</h3>
+          <p>Une cuisson vive qui donne à la pâte son bord gonflé et légèrement fumé.</p>
+        </li>
+        <li class="reveal">
+          <svg aria-hidden="true"><use href="#i-hand"/></svg>
+          <h3>Fait maison</h3>
+          <p>Pâtes, sauces et gratins préparés en cuisine, chaque jour.</p>
+        </li>
+        <li class="reveal">
+          <span class="pillars__k" aria-hidden="true">K</span>
+          <h3>Cachère</h3>
+          <p>Une cuisine sous surveillance rabbinique, pour recevoir toute la famille.</p>
+        </li>
+        <li class="reveal">
+          <span class="pillars__price" aria-hidden="true">€€</span>
+          <h3>20 à 30 €</h3>
+          <p>Par personne, pour un repas complet et des assiettes bien servies.</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ===================== Plats signatures ===================== -->
+    <section class="signatures" aria-labelledby="signatures-title">
+      <h2 class="visually-hidden" id="signatures-title">Nos plats signatures</h2>
+
+      <article class="feature">
+        <div class="feature__media reveal">
+          <img src="images/signature-pizza-matana.jpg" alt="Pizza garnie de fromage de chèvre et de jeunes pousses vertes" loading="lazy" decoding="async" width="1000" height="1333">
+        </div>
+        <div class="feature__body reveal">
+          <p class="eyebrow">La signature · Pizza</p>
+          <h3 class="title">Pizza Matana</h3>
+          <p>La pizza qui porte notre nom. Tomate, mozzarella, chèvre, un filet de miel, des noix et une poignée de roquette fraîche&nbsp;: sucrée, salée, fondante et croquante à la fois.</p>
+          <p class="script script--small">Notre préférée</p>
+          <a class="link-arrow" href="#carte" data-tab="pizzas">Voir les pizzas <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        </div>
+      </article>
+
+      <article class="feature feature--reverse">
+        <div class="feature__media reveal">
+          <img src="images/signature-pates-tartufo.jpg" alt="Assiette de tagliatelles crémeuses aux champignons et à la truffe" loading="lazy" decoding="async" width="1400" height="934">
+        </div>
+        <div class="feature__body reveal">
+          <p class="eyebrow">Pâtes</p>
+          <h3 class="title">Pâtes al tartufo</h3>
+          <p>Une sauce crémeuse parfumée à la truffe qui enrobe chaque bouchée. Un plat généreux pour les soirs où l'on a envie de se faire plaisir.</p>
+          <a class="link-arrow" href="#carte" data-tab="pates">Voir les pâtes <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        </div>
+      </article>
+
+      <article class="feature">
+        <div class="feature__media reveal">
+          <img src="images/signature-carpaccio-saumon.jpg" alt="Assiette de saumon dressée en salle, verres de vin en arrière-plan" loading="lazy" decoding="async" width="1400" height="2100">
+        </div>
+        <div class="feature__body reveal">
+          <p class="eyebrow">Entrée</p>
+          <h3 class="title">Carpaccio de saumon</h3>
+          <p>De fines tranches de saumon, un filet d'huile d'olive, un trait de citron. Frais et délicat, à garder pour soi ou à partager en début de repas.</p>
+          <a class="link-arrow" href="#carte" data-tab="entrees">Voir les entrées <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        </div>
+      </article>
+    </section>
+
+    <!-- ===================== Services ===================== -->
+    <section class="section services" aria-labelledby="services-title">
+      <div class="container">
+        <header class="section-head center reveal">
+          <p class="eyebrow">Comme vous préférez</p>
+          <h2 class="title" id="services-title">Au restaurant ou chez vous</h2>
+        </header>
+        <div class="services__grid">
+          <article class="service reveal">
+            <div class="service__media"><img src="images/service-sur-place.jpg" alt="Pizza aux tomates cerises et basilic sur un plan de travail fariné" loading="lazy" decoding="async" width="1200" height="800"></div>
+            <h3>Sur place &amp; à emporter</h3>
+            <p>Installez-vous en salle, près du four, ou passez récupérer votre commande. Appelez-nous, elle sera prête à votre arrivée.</p>
+            <p class="service__meta">Titres-restaurant acceptés</p>
+            <a class="btn btn--dark" href="tel:+33146550407" data-href="tel"><svg aria-hidden="true"><use href="#i-phone"/></svg> Commander par téléphone</a>
+          </article>
+          <article class="service reveal">
+            <div class="service__media"><img src="images/service-livraison.jpg" alt="Pizza dorée découpée en parts sur une planche en bois" loading="lazy" decoding="async" width="1200" height="800"></div>
+            <h3>Livraison</h3>
+            <p>Nos pizzas et nos pâtes livrées chez vous à Montrouge et dans les environs, via nos partenaires.</p>
+            <p class="service__meta">Zone et délais selon la plateforme</p>
+            <div class="service__links">
+              <a class="btn btn--outline" href="#" data-href="deliveroo" target="_blank" rel="noopener">Deliveroo</a>
+              <a class="btn btn--outline" href="#" data-href="ubereats" target="_blank" rel="noopener">Uber Eats</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== La carte ===================== -->
+    <section class="section menu" id="carte" aria-labelledby="carte-title">
+      <div class="container container--menu">
+        <header class="section-head center reveal">
+          <svg class="menu__mono" aria-hidden="true"><use href="#i-mono"/></svg>
+          <p class="eyebrow">Cuisine italienne cachère</p>
+          <h2 class="title" id="carte-title">La carte</h2>
+        </header>
+
+        <div class="menu__tabs" role="tablist" aria-label="Catégories de la carte" id="menu-tabs"></div>
+        <div class="menu__panel" id="menu-panel" role="tabpanel" aria-live="polite"></div>
+
+        <noscript><p class="center">Activez JavaScript pour afficher la carte, ou appelez-nous au 01 46 55 04 07.</p></noscript>
+        <p class="menu__foot">Prix nets en euros, service compris. Carte susceptible d'évoluer selon les saisons.</p>
+      </div>
+    </section>
+
+    <!-- ===================== Le restaurant ===================== -->
+    <section class="section place" id="restaurant" aria-labelledby="restaurant-title">
+      <div class="container place__grid">
+        <div class="place__text reveal">
+          <p class="eyebrow eyebrow--light">Le restaurant</p>
+          <h2 class="title" id="restaurant-title">Briques rouges,<br>feu de bois<br>et lumière dorée</h2>
+          <p>Un mur de briques apparentes, des suspensions en laiton, des chaises bistrot en bois sombre et, au fond, le four où crépite le feu. Au Matana, on vient en famille, entre amis ou entre collègues, et l'on se sent vite comme un habitué.</p>
+          <p>Notre pizzaiolo étale, garnit et enfourne chaque pizza devant vous. Une minute trente dans le four à bois, et elle arrive à table, encore fumante.</p>
+          <p class="script script--light">Le plat du jour est à l'ardoise</p>
+        </div>
+        <div class="place__media reveal">
+          <img class="place__img place__img--main" src="images/restaurant-four.jpg" alt="Part de pizza fumante tirée du four, fromage filant" loading="lazy" decoding="async" width="1200" height="2133">
+          <img class="place__img place__img--side" src="images/restaurant-pizzaiolo.jpg" alt="Mains servant une pizza à table, vue de dessus" loading="lazy" decoding="async" width="1000" height="1500">
+        </div>
+      </div>
+
+      <div class="container gallery" aria-label="Galerie photos">
+        <figure class="gallery__item gallery__item--tall reveal"><img src="images/galerie-salade.jpg" alt="Salade composée colorée dans une assiette sombre" loading="lazy" decoding="async" width="1000" height="1500"></figure>
+        <figure class="gallery__item reveal"><img src="images/galerie-margherita.jpg" alt="Pizza margherita, mozzarella et feuilles de basilic" loading="lazy" decoding="async" width="1000" height="750"></figure>
+        <figure class="gallery__item reveal"><img src="images/galerie-spaghetti.jpg" alt="Spaghetti à la sauce tomate enroulés sur une fourchette" loading="lazy" decoding="async" width="1000" height="1250"></figure>
+        <figure class="gallery__item reveal"><img src="images/restaurant-bar.jpg" alt="Comptoir et bar éclairés par des suspensions, bouteilles en étagère" loading="lazy" decoding="async" width="1200" height="900"></figure>
+        <figure class="gallery__item gallery__item--wide reveal"><img src="images/restaurant-salle.jpg" alt="Salle de restaurant en bois et métal, lumière naturelle" loading="lazy" decoding="async" width="1200" height="900"></figure>
+        <figure class="gallery__item reveal"><img src="images/galerie-tiramisu.jpg" alt="Part de tiramisu saupoudrée de cacao" loading="lazy" decoding="async" width="1000" height="1333"></figure>
+      </div>
+    </section>
+
+    <!-- ===================== Avis ===================== -->
+    <section class="section reviews" aria-labelledby="avis-title">
+      <div class="container container--narrow center reveal">
+        <p class="eyebrow">Ils parlent de nous</p>
+        <h2 class="title" id="avis-title">Merci pour votre confiance</h2>
+        <div class="reviews__score">
+          <span class="reviews__note" data-bind="rating">4,5</span>
+          <div>
+            <div class="stars" role="img" aria-label="Note de 4,5 sur 5">
+              <svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><span class="stars__half"><svg aria-hidden="true"><use href="#i-star"/></svg></span>
+            </div>
+            <p class="reviews__count"><span data-bind="count">69</span> avis sur Google</p>
+          </div>
+        </div>
+        <a class="btn btn--dark" href="https://www.google.com/maps/search/?api=1&amp;query=Le+Matana+103+rue+Gabriel+P%C3%A9ri+92120+Montrouge" data-href="google" target="_blank" rel="noopener">Lire les avis sur Google</a>
+      </div>
+    </section>
+
+    <!-- ===================== Réservation & événements ===================== -->
+    <section class="section booking" id="reservation" aria-labelledby="reservation-title">
+      <div class="container booking__grid">
+        <div class="booking__form-wrap reveal">
+          <p class="eyebrow">Réservation</p>
+          <h2 class="title" id="reservation-title">Réserver une table</h2>
+          <p class="muted">Envoyez-nous votre demande&nbsp;: nous vous rappelons pour la confirmer. Pour ce soir, le plus simple reste de nous appeler.</p>
+
+          <form class="form" id="booking-form" novalidate>
+            <div class="form__row">
+              <label class="field">
+                <span>Nom</span>
+                <input type="text" name="nom" autocomplete="name" required>
+              </label>
+              <label class="field">
+                <span>Téléphone</span>
+                <input type="tel" name="telephone" autocomplete="tel" inputmode="tel" required>
+              </label>
+            </div>
+            <div class="form__row form__row--3">
+              <label class="field">
+                <span>Date</span>
+                <input type="date" name="date" required>
+              </label>
+              <label class="field">
+                <span>Heure</span>
+                <select name="heure" required>
+                  <option value="">Choisir</option>
+                  <option>18h30</option><option>19h00</option><option>19h30</option><option>20h00</option>
+                  <option>20h30</option><option>21h00</option><option>21h30</option><option>22h00</option>
+                </select>
+              </label>
+              <label class="field">
+                <span>Couverts</span>
+                <select name="couverts" required>
+                  <option value="">Choisir</option>
+                  <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option>
+                  <option>6</option><option>7</option><option>8</option><option>9</option><option>10 et plus</option>
+                </select>
+              </label>
+            </div>
+            <label class="field">
+              <span>Message <em>(facultatif)</em></span>
+              <textarea name="message" rows="3" placeholder="Anniversaire, chaise bébé, allergie…"></textarea>
+            </label>
+            <p class="form__status" id="form-status" role="status"></p>
+            <div class="form__actions">
+              <button class="btn btn--copper" type="submit">Envoyer ma demande</button>
+              <a class="btn btn--outline-dark" href="tel:+33146550407" data-href="tel"><svg aria-hidden="true"><use href="#i-phone"/></svg> Appeler pour réserver</a>
+            </div>
+          </form>
+        </div>
+
+        <aside class="events reveal" aria-labelledby="events-title">
+          <img src="images/galerie-salle.jpg" alt="Grande salle de restaurant chaleureuse aux tables dressées" loading="lazy" decoding="async" width="1000" height="667">
+          <div class="events__body">
+            <p class="eyebrow eyebrow--light">Événements</p>
+            <h3 class="title" id="events-title">Privatisation &amp; groupes</h3>
+            <p>Anniversaire, bar-mitsva, repas d'entreprise ou fête de famille&nbsp;: nous accueillons les groupes et pouvons privatiser la salle. Grandes commandes de pizzas à emporter sur demande.</p>
+            <ul class="events__list">
+              <li>Menus de groupe sur mesure</li>
+              <li>Privatisation de la salle</li>
+              <li>Commandes pour fêtes et événements</li>
+            </ul>
+            <a class="btn btn--copper" href="tel:+33146550407" data-href="tel">Parlons de votre événement</a>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ===================== Infos pratiques ===================== -->
+    <section class="section infos" id="infos" aria-labelledby="infos-title">
+      <div class="container">
+        <header class="section-head center reveal">
+          <p class="eyebrow">Infos pratiques</p>
+          <h2 class="title" id="infos-title">Venir au Matana</h2>
+        </header>
+
+        <div class="infos__grid">
+          <div class="infos__cards reveal">
+            <div class="info">
+              <svg aria-hidden="true"><use href="#i-pin"/></svg>
+              <div>
+                <h3>Adresse</h3>
+                <p data-bind="address">103 rue Gabriel Péri, 92120 Montrouge</p>
+                <a class="link-arrow" href="https://www.google.com/maps/dir/?api=1&amp;destination=103+rue+Gabriel+P%C3%A9ri+92120+Montrouge" target="_blank" rel="noopener">Itinéraire <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+              </div>
+            </div>
+            <div class="info">
+              <svg aria-hidden="true"><use href="#i-metro"/></svg>
+              <div>
+                <h3>Accès</h3>
+                <!-- À VÉRIFIER : stations et temps de marche -->
+                <p>Métro ligne 4 · Mairie de Montrouge<br>Métro ligne 4 · Porte d'Orléans</p>
+              </div>
+            </div>
+            <div class="info">
+              <svg aria-hidden="true"><use href="#i-phone"/></svg>
+              <div>
+                <h3>Téléphone</h3>
+                <p><a class="tel-link" href="tel:+33146550407" data-href="tel" data-bind="phone">01 46 55 04 07</a></p>
+              </div>
+            </div>
+            <div class="info info--hours">
+              <svg aria-hidden="true"><use href="#i-clock"/></svg>
+              <div>
+                <h3>Horaires</h3>
+                <dl class="hours" id="hours"></dl>
+                <p class="hours__note" data-bind="hoursNote">Service du soir à partir de 18h30.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="infos__map reveal">
+            <iframe title="Plan d'accès au restaurant Le Matana, 103 rue Gabriel Péri à Montrouge"
+                    src="https://www.google.com/maps?q=Le+Matana,+103+rue+Gabriel+P%C3%A9ri,+92120+Montrouge&amp;ll=48.8197134,2.3115971&amp;z=16&amp;output=embed"
+                    loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== Pied de page ===================== -->
+  <footer class="footer">
+    <svg class="footer__mono" aria-hidden="true"><use href="#i-mono"/></svg>
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <svg class="footer__logo" role="img" aria-label="Le Matana, restaurant italien"><use href="#i-logo"/></svg>
+        <p class="footer__kosher"><span class="kosher__badge" aria-hidden="true">K</span><span>Restaurant cachère<br><span data-bind="kosher">[Nom de la certification à confirmer]</span></span></p>
+      </div>
+      <div>
+        <h2 class="footer__title">Nous trouver</h2>
+        <p data-bind="address">103 rue Gabriel Péri, 92120 Montrouge</p>
+        <p><a href="tel:+33146550407" data-href="tel" data-bind="phone">01 46 55 04 07</a></p>
+        <p><a href="mailto:contact@lematana.fr" data-href="email" data-bind="email">contact@lematana.fr</a></p>
+      </div>
+      <div>
+        <h2 class="footer__title">Horaires</h2>
+        <dl class="hours hours--footer" id="hours-footer"></dl>
+      </div>
+      <div>
+        <h2 class="footer__title">Suivez-nous</h2>
+        <div class="footer__social">
+          <a href="#" data-href="instagram" aria-label="Instagram" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-instagram"/></svg></a>
+          <a href="#" data-href="facebook" aria-label="Facebook" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-facebook"/></svg></a>
+        </div>
+        <a class="btn btn--copper btn--small" href="#reservation">Réserver une table</a>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <p>© <span id="year">2026</span> Le Matana · Montrouge</p>
+      <p><a href="mentions-legales.html">Mentions légales</a></p>
+    </div>
+  </footer>
+
+  <!-- Barre d'actions mobile -->
+  <div class="mobile-bar" aria-label="Actions rapides">
+    <a href="tel:+33146550407" data-href="tel"><svg aria-hidden="true"><use href="#i-phone"/></svg> Appeler</a>
+    <a href="#reservation" class="mobile-bar__book"><svg aria-hidden="true"><use href="#i-calendar"/></svg> Réserver</a>
+  </div>
+
+  <script src="data/site.js"></script>
+  <script src="data/menu.js"></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>
